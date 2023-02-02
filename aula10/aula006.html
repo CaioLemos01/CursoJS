@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        div#area {
+            background-color: #595959;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+            color: #fff;
+            width: 50%;
+            height: 300px;
+            line-height: 300px;
+            margin: auto;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">Área</div>
+    
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseleave', saiu)
+
+        function clicar() {
+            a.innerText = 'Clicado'
+            a.style.background = 'blue'
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou!'
+        }
+
+        function saiu() {
+            a.innerText = 'Saiu!'
+            a.style.background = '#595959'
+        }
+        
+    </script>
+</body>
+</html>
